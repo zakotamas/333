@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Placc 333</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.jpg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header id="FEJ">
+    <nav>
+      <img src="logo.png" alt="Szállás logó" id="nav-logo" class="logo-img" />
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li id="nav-home">Kezdőlap</li>
+        <li id="nav-rooms">Szobák</li>
+        <li id="nav-booking">Foglalás</li>
+        <li id="nav-rules">Házirend</li>
+        <li id="nav-gallery">Galéria</li>
+        <li id="nav-contact">Kapcsolat</li>
+        <li>
+          <select id="language-switcher">
+            <option value="hu">🇭🇺 HU</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="de">🇩🇪 DE</option>
+          </select>
+        </li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+
+
+<main>
+    <section class="gallery">
+      <h2>Galéria</h2>
+      <div class="gallery-grid">
+        <!-- 12 kép -->
+        <img src="gallery/g1.jpg" alt="Kép 1" class="gallery-item">
+        <img src="gallery/g2.jpg" alt="Kép 2" class="gallery-item">
+        <img src="gallery/g3.jpg" alt="Kép 3" class="gallery-item">
+        <img src="gallery/g4.jpg" alt="Kép 4" class="gallery-item">
+        <img src="gallery/g5.jpg" alt="Kép 5" class="gallery-item">
+        <img src="gallery/g6.jpg" alt="Kép 6" class="gallery-item">
+        <img src="gallery/g7.jpg" alt="Kép 7" class="gallery-item">
+        <img src="gallery/g8.jpg" alt="Kép 8" class="gallery-item">
+        <img src="gallery/g9.jpg" alt="Kép 9" class="gallery-item">
+        <img src="gallery/g10.jpg" alt="Kép 10" class="gallery-item">
+        <img src="gallery/g11.jpg" alt="Kép 11" class="gallery-item">
+        <img src="gallery/g12.jpg" alt="Kép 12" class="gallery-item">
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <footer>
+    <p id="footer-text">&copy; 2025 Szállás. Minden jog fenntartva.</p>
+  </footer>
+
+
+
+<!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+
+  <script src="gallery.js"></script>
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>
