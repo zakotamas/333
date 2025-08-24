@@ -1,3 +1,4 @@
+
 .gallery {
   padding: 40px 20px;
   text-align: center;
@@ -42,10 +43,6 @@
   transform: scale(1.05) rotate(0deg);
 }
 
-.gallery-item:hover {
-  transform: scale(1.05) rotate(0deg);
-}
-
 /* Lightbox */
 .lightbox {
   position: fixed;
@@ -62,8 +59,10 @@
 }
 
 .lightbox-img {
-  max-width: 90%;
+  max-width: 90vw;
   max-height: 80vh;
+  width: auto;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
@@ -72,13 +71,29 @@
   display: none;
 }
 
+
+
+
+.lightbox-content {
+  margin-top: 70px;  /*ezzel pozícionálom a megnyitott képet*/
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
 .close {
   position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 2rem;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
   color: white;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 8px 12px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .nav {
@@ -96,4 +111,7 @@
   color: white;
   cursor: pointer;
   user-select: none;
+  padding: 10px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
 }

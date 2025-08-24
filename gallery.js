@@ -41,3 +41,17 @@ document.addEventListener('keydown', (e) => {
     lightboxImg.src = '';
   }
 });
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.add('hidden');
+    lightboxImg.src = '';
+  }
+});
+
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.add('hidden');
+    document.querySelector('.lightbox-img').src = '';
+  }
+});
