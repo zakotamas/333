@@ -1,0 +1,41 @@
+{
+  "hu": {
+    "page-title": "Szállás",
+    "nav-logo": "Szállás",
+    "nav-home": "Kezdőlap",
+    "nav-rooms": "Szobák",
+    "nav-booking": "Foglalás",
+    "nav-rules": "Házirend",
+    "nav-gallery": "Galéria",
+    "nav-contact": "Kapcsolat",
+    "banner-text": "Üdvözöl a Placc333 - nyugalom a magaslatban",
+    "intro-text": " Képzeld el, hogy egy eldugott hegytetőn ébredsz, ahol a friss levegő, a madarak éneke és a természet illata vesz körül. Üdvözlünk a Placc333 világában, Tenke-hegyen, 333 méter magasan, a szlovén és horvát határ találkozásánál. Innen lenyűgöző panoráma tárul eléd, miközben az erdő közelsége és a természet csendje átölel. Ez a különleges hely tökéletes választás mindazok számára, akik szeretnének elszakadni a hétköznapok rohanásától, és újra kapcsolatba kerülni a természettel. Nálunk a reggelek lassabban indulnak – egy forró kávéval a kezedben élvezheted a látványt, ahogy a napfény lassan átöleli a tájat. Napközben felfedezheted a környék túraútvonalait, kerékpározhatsz, vagy egyszerűen csak megpihenhetsz a teraszon, miközben a panoráma minden pillanatban új arcát mutatja. Amikor leszáll az este, a csillagos égbolt és a természet neszei kísérik a meghitt beszélgetéseket. A Placc333 nem csupán egy hely, hanem egy élmény, amely feltölt, megnyugtat, és közelebb visz a lényeghez, a harmóniához. Itt minden a Te kényelmedet és pihenésedet szolgálja, és mi mindent megteszünk azért, hogy élményeid felejthetetlenek legyenek. Lépj ki a hétköznapokból, és fedezd fel, milyen az élet a nyugalom magaslatán. Látogass el hozzánk, és éld át a nyugalmat, kényelmet és a felejthetetlen élményeket, amelyeket a Placc333 kínál!",
+    "footer-text": "© 2025 Szállás. Minden jog fenntartva."
+  },
+  "en": {
+    "page-title": "Accommodation",
+    "nav-logo": "Accommodation",
+    "nav-home": "Home",
+    "nav-rooms": "Rooms",
+    "nav-booking": "Booking",
+    "nav-rules": "House Rules",
+    "nav-gallery": "Gallery",
+    "nav-contact": "Contact",
+    "banner-text": "Welcome to our accommodation!",
+    "intro-text": "A cozy accommodation near nature, perfect for relaxation...",
+    "footer-text": "© 2025 Accommodation. All rights reserved."
+  },
+  "de": {
+    "page-title": "Unterkunft",
+    "nav-logo": "Unterkunft",
+    "nav-home": "Startseite",
+    "nav-rooms": "Zimmer",
+    "nav-booking": "Buchung",
+    "nav-rules": "Hausordnung",
+    "nav-gallery": "Galerie",
+    "nav-contact": "Kontakt",
+    "banner-text": "Willkommen in unserer Unterkunft!",
+    "intro-text": "Eine gemütliche Unterkunft in der Nähe der Natur, ideal zum Entspannen...",
+    "footer-text": "© 2025 Unterkunft. Alle Rechte vorbehalten."
+  }
+}
