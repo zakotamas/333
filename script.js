@@ -1,82 +1,68 @@
-const themeToggle = document.getElementById("theme-toggle");
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-const languageSwitcher = document.getElementById("language-switcher");
-const galleryImg = document.getElementById("gallery-img");
+(() => {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const menuToggleBtn = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const languageSwitcher = document.getElementById("language-switcher");
+  const slideshowImg = document.getElementById("gallery-img");
+  const header = document.getElementById("main-header");
 
-let currentImage = 0;
-const images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+  // 🌄 Képváltó
+  const slideshowImages = ["img1.jpg", "img2.jpg", "img3.jpg"];
+  let currentSlide = 0;
 
-setInterval(() => {
-  currentImage = (currentImage + 1) % images.length;
-  galleryImg.src = images[currentImage];
-}, 3000);
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slideshowImages.length;
+    slideshowImg.src = slideshowImages[currentSlide];
+  }, 3000);
 
-// Hamburger menu
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+  // 🍔 Menü toggle
+  menuToggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 
-
-
-// Nyelvváltás
-function applyLanguage(lang) {
-  fetch("lang.json")
-    .then(res => res.json())
-    .then(data => {
-      const translations = data[lang];
-      Object.keys(translations).forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = translations[id];
+  // 🌐 Nyelvváltás
+  function applyLanguage(lang) {
+    fetch("lang.json")
+      .then(res => res.json())
+      .then(data => {
+        const translations = data[lang];
+        Object.keys(translations).forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = translations[id];
+        });
       });
-    });
-}
-
-languageSwitcher.addEventListener("change", (e) => {
-  const selectedLang = e.target.value;
-  localStorage.setItem("preferredLang", selectedLang);
-  applyLanguage(selectedLang);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("preferredLang") || "hu";
-  languageSwitcher.value = savedLang;
-  applyLanguage(savedLang);
-});
-
-
-
-
-// Téma váltása és mentése
-themeToggle.addEventListener("click", () => {
-  const isDark = document.body.classList.toggle("dark");
-  themeToggle.textContent = isDark ? "☀️" : "🌙";
-  localStorage.setItem("preferredTheme", isDark ? "dark" : "light");
-});
-
-// Oldal betöltésekor téma visszaállítása
-document.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("preferredTheme") || "light";
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark");
-    themeToggle.textContent = "☀️";
-  } else {
-    document.body.classList.remove("dark");
-    themeToggle.textContent = "🌙";
   }
 
-  // Nyelv visszaállítása is itt történik
-  const savedLang = localStorage.getItem("preferredLang") || "hu";
-  languageSwitcher.value = savedLang;
-  applyLanguage(savedLang);
-});
+  languageSwitcher.addEventListener("change", (e) => {
+    const selectedLang = e.target.value;
+    localStorage.setItem("preferredLang", selectedLang);
+    applyLanguage(selectedLang);
+  });
 
+  // 🌙 Téma váltás
+  themeToggleBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark");
+    themeToggleBtn.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("preferredTheme", isDark ? "dark" : "light");
+  });
 
-window.addEventListener('scroll', function () {
-    const header = document.getElementById('main-header');
+  // 🔄 Betöltéskor beállítások visszaállítása
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("preferredTheme") || "light";
+    document.body.classList.toggle("dark", savedTheme === "dark");
+    themeToggleBtn.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+
+    const savedLang = localStorage.getItem("preferredLang") || "hu";
+    languageSwitcher.value = savedLang;
+    applyLanguage(savedLang);
+  });
+
+  // 📏 Scroll hatás a fejlécen
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
   });
+})();
