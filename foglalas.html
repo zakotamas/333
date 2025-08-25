@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Placc 333</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.jpg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="FEJ">
+    <nav>
+      <img src="logo.png" alt="Szállás logó" id="nav-logo" class="logo-img" />
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li id="nav-home">Kezdőlap</li>
+        <li id="nav-rooms">Szobák</li>
+        <li id="nav-booking">Foglalás</li>
+        <li id="nav-rules">Házirend</li>
+        <li id="nav-gallery">Galéria</li>
+        <li id="nav-contact">Kapcsolat</li>
+        <li>
+          <select id="language-switcher">
+            <option value="hu">🇭🇺 HU</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="de">🇩🇪 DE</option>
+          </select>
+        </li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+  <div id="appartman-embed-iframe-wrapper">
+    <iframe
+        id="appartman-embed-iframe"
+        src="https://foglalas.appartman.hu/p/embed"
+        width="100%"
+        scrolling="yes"
+    ></iframe>
+</div>
+<script src="https://foglalas.appartman.hu/embed-script-min.js"></script>
+
+
+
+
+  <footer>
+    <p id="footer-text">&copy; 2025 Szállás. Minden jog fenntartva.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
