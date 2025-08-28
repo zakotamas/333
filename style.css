@@ -80,6 +80,27 @@ nav {
   cursor: pointer;
 }
 
+/*Foglalás menü "keret"*/
+#nav-booking {
+  background: linear-gradient(135deg, #f0f4ff, #dbe9ff); /* lágy színátmenet */
+  border: 2px solid #a3c4f3; /* világoskék keret */
+  border-radius: 8px; /* lekerekített sarkok */
+  padding: 5px 5px; /* belső térköz */
+  margin: 10px; /* külső térköz */
+  font-weight: bold;
+  color: #2a4d8f; /* kontrasztos szövegszín */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* finom árnyék */
+  transition: all 0.3s ease;
+}
+
+#nav-booking:hover {
+  background: linear-gradient(135deg, #dbe9ff, #f0f4ff); /* fordított színátmenet */
+  transform: scale(1.05); /* enyhe nagyítás hoverre */
+  cursor: pointer;
+}
+
+
+/*nyelvváltó*/
 #language-switcher {
   background-color: white;
   color: var(--primary);
@@ -140,6 +161,51 @@ body.dark #language-switcher {
 
 .gallery img:hover {
   transform: scale(1.02);
+}
+
+/*Kezdőlap szöveg*/
+.intro-text {
+  padding: 2.5rem;
+  border-left: 4px solid #66bb6a;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  color: inherit;
+  background-color: transparent;
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+.intro-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.intro-text p::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: inherit;
+}
+
+
+.intro-text strong {
+  color: #2e7d32;
+  font-weight: 600;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 2px;
+}
+
+.intro-text em {
+  font-style: italic;
+  color: #4e342e;
+  background: linear-gradient(to right, #a1887f33, #d7ccc833);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
 }
 
 /* Footer */
