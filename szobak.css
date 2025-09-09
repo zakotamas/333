@@ -1,0 +1,151 @@
+#rooms-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Fejléc kép és szöveg */
+.header-image {
+  position: relative;
+  text-align: center;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#rooms-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Szobák */
+.room-description {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+
+.room {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.room-description h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-left: 5px solid #0078D4;
+  padding-left: 1rem;
+}
+
+.room-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.room-description ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.room-description ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Galéria */
+.room-gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.room-gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Ikonok */
+.room-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.room-icons span {
+  margin: 0.5rem;
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+/* Ár és foglalás */
+.room-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.booking-button {
+  background-color: #0078D4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #005fa3;
+}
+
+/* Mobilbarát */
+@media (max-width: 768px) {
+  #rooms-title {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .room-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .booking-button {
+    width: 100%;
+    text-align: center;
+  }
+}

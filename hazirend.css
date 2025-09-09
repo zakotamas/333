@@ -1,0 +1,59 @@
+.rules-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+#rules-logo {
+  display: block;
+  max-width: 180px;
+  margin: 0 auto 20px;
+}
+
+#rules-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#rules-intro-1,
+#rules-intro-2,
+#rules-intro-3,
+#rules-closing {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+#rules-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#rules-list li {
+  margin-bottom: 10px;
+}
+
+.provider {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #ccc;
+  margin-top: 30px;
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .rules-wrapper {
+    padding: 10px;
+  }
+
+  #rules-title {
+    font-size: 1.5em;
+  }
+
+  #rules-logo {
+    max-width: 140px;
+  }
+}
